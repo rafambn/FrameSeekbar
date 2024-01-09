@@ -61,10 +61,10 @@ publishing {
 
         // Provide artifacts information requited by Maven Central
         pom {
-            name.set("Template library with App")
-            description.set("Kotlin Multiplatform library")
+            name.set("FrameSeekBar")
+            description.set("A Kotlin Multiplatform library that implements a custom seekbar.")
             //url.set("") todo
-             url.set("https://github.com/rafambn/Template-Library-with-app")
+             url.set("https://github.com/rafambn/FrameSeekbar")
 
             licenses {
                 license {
@@ -81,7 +81,7 @@ publishing {
             }
             scm {
                 //url.set("") todo
-                 url.set("https://github.com/rafambn/Template-Library-with-app")
+                 url.set("https://github.com/rafambn/FrameSeekbar")
             }
         }
     }

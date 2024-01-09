@@ -44,26 +44,26 @@ ossrhUsername=...
 ossrhPassword=...
 ```
 
-4) Run `./gradlew :templateLibrary:publishAllPublicationsToSonatypeRepository`
+4) Run `./gradlew :FrameSeekBar:publishAllPublicationsToSonatypeRepository`
 
 ### Build platform artifacts
 
 #### Android aar
 
-- Run `./gradlew :templateLibrary:assembleRelease`
+- Run `./gradlew :FrameSeekBar:assembleRelease`
 - Output: `/templateLibrary/build/outputs/aar/templateLibrary-release.aar`
 
 #### JVM jar
 
-- Run `./gradlew :templateLibrary:jvmJar`
+- Run `./gradlew :FrameSeekBar:jvmJar`
 - Output: `/templateLibrary/build/libs/templateLibrary-jvm-1.0.jar`
 
 #### iOS Framework
 
-- Run `./gradlew :templateLibrary:linkReleaseFrameworkIosArm64`
+- Run `./gradlew :FrameSeekBar:linkReleaseFrameworkIosArm64`
 - Output: `/templateLibrary/build/bin/iosArm64/releaseFramework/templateLibrary.framework`
 
 #### JS file
 
-- Run `./gradlew :templateLibrary:jsBrowserProductionWebpack`
+- Run `./gradlew :FrameSeekBar:jsBrowserProductionWebpack`
 - Output: `/templateLibrary/build/dist/js/productionExecutable/templateLibrary.js`
