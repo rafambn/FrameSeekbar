@@ -92,7 +92,6 @@ fun FrameSeekBar(
     )
 }
 
-//TODO Add KMP support
 @Composable
 private fun FrameSeekBarBase(
     modifier: Modifier = Modifier,

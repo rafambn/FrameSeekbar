@@ -10,6 +10,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.DpSize
+import androidx.compose.ui.unit.IntOffset
+import androidx.compose.ui.unit.IntSize
 
 @Composable
 fun Pointer(
@@ -28,10 +30,8 @@ fun Pointer(
                 pointer.bitmap?.let { bitmap ->
                     drawImage(
                         image = bitmap,
-                        topLeft = Offset(
-                            0F,
-                            pointer.topOffset.toPx()
-                        )
+                        dstOffset = IntOffset(0, pointer.topOffset.toPx().toInt()),
+                        dstSize = IntSize(pointer.width.toPx().toInt(), pointer.height.toPx().toInt()) //TODO lots of conversion search way to improve
                     )
                 } ?: run {
                     drawRect(
@@ -70,7 +70,8 @@ fun Markers(
                     marker.bitmap?.let { bitmap ->
                         drawImage(
                             image = bitmap,
-                            topLeft = Offset(mOffsets[index].toPx(), marker.topOffset.toPx())
+                            dstOffset = IntOffset(mOffsets[index].toPx().toInt(), marker.topOffset.toPx().toInt()), //TODO lots of conversion search way to improve
+                            dstSize = IntSize(marker.width.toPx().toInt(), marker.height.toPx().toInt())
                         )
                     } ?: run {
                         drawRect(

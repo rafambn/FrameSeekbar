@@ -46,14 +46,6 @@ internal fun App() = AppTheme {
                 Marker(width = 10.dp, bitmap = imageBitmap.value)
             )
         }
-//        val teste = remember { mutableStateOf(10.dp) }
-//        LaunchedEffect(0) {
-//            MainScope().launch {
-//                delay(4000L)
-//                println("foi")
-//                teste.value = 20.dp
-//            }
-//        }
 
         val pointer = remember(imageBitmap.value) {
             mutableStateOf(
