@@ -1,4 +1,4 @@
-package io.github.rafambn.templatelibrary
+package io.github.rafambn.templateapp
 
 import kotlinx.browser.window
 

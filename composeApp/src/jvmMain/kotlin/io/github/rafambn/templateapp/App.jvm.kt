@@ -1,4 +1,4 @@
-package io.github.rafambn.templatelibrary
+package io.github.rafambn.templateapp
 
 import java.awt.Desktop
 import java.net.URI

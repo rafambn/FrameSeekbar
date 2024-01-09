@@ -74,14 +74,14 @@ kotlin {
 }
 
 android {
-    namespace = "io.github.rafambn.templatelibrary"
+    namespace = "io.github.rafambn.templateapp"
     compileSdk = 34
 
     defaultConfig {
         minSdk = 24
         targetSdk = 34
 
-        applicationId = "io.github.rafambn.templatelibrary.androidApp"
+        applicationId = "io.github.rafambn.templateapp.androidApp"
         versionCode = 1
         versionName = "1.0.0"
     }
@@ -108,7 +108,7 @@ compose.desktop {
 
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-            packageName = "io.github.rafambn.templatelibrary.desktopApp"
+            packageName = "io.github.rafambn.templateapp.desktopApp"
             packageVersion = "1.0.0"
         }
     }

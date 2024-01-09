@@ -1,4 +1,4 @@
-package io.github.rafambn.templatelibrary
+package io.github.rafambn.templateapp
 
 import android.app.Application
 import android.content.Intent

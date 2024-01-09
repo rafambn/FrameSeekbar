@@ -1,4 +1,4 @@
-package io.github.rafambn.templatelibrary
+package io.github.rafambn.templateapp
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -34,8 +34,8 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.unit.dp
-import io.github.rafambn.templatelibrary.theme.AppTheme
-import io.github.rafambn.templatelibrary.theme.LocalThemeIsDark
+import io.github.rafambn.templateapp.theme.AppTheme
+import io.github.rafambn.templateapp.theme.LocalThemeIsDark
 
 @Composable
 internal fun App() = AppTheme {

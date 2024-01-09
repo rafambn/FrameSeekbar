@@ -3,7 +3,7 @@ import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
 import androidx.compose.ui.window.rememberWindowState
 import java.awt.Dimension
-import io.github.rafambn.templatelibrary.App
+import io.github.rafambn.templateapp.App
 
 fun main() = application {
     Window(

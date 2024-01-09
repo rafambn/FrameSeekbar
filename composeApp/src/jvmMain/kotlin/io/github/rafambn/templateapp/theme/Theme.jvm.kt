@@ -1,4 +1,4 @@
-package io.github.rafambn.templatelibrary.theme
+package io.github.rafambn.templateapp.theme
 
 import androidx.compose.runtime.Composable
 
