@@ -26,7 +26,7 @@ import kotlin.math.floor
 import kotlin.math.max
 
 @Composable
-fun FrameProgressBar(
+fun FrameSeekBar(
     modifier: Modifier = Modifier,
     pointerSelection: PointerSelection = PointerSelection.CENTER,
     coercedPointer: CoercePointer = CoercePointer.NOT_COERCED,
@@ -40,7 +40,7 @@ fun FrameProgressBar(
     enabled: Boolean = true,
     interactionSource: MutableInteractionSource? = null
 ) {
-    FrameProgressBarBase(
+    FrameSeekBarBase(
         modifier = modifier,
         movement = Movement.CONTINUOUS,
         pointerSelection = pointerSelection,
@@ -58,7 +58,7 @@ fun FrameProgressBar(
 }
 
 @Composable
-fun FrameProgressBar(
+fun FrameSeekBar(
     modifier: Modifier = Modifier,
     pointerSelection: PointerSelection = PointerSelection.CENTER,
     pointer: Marker,
@@ -76,7 +76,7 @@ fun FrameProgressBar(
         }
     }
 
-    FrameProgressBarBase(
+    FrameSeekBarBase(
         modifier = modifier,
         movement = Movement.DISCRETE,
         pointerSelection = pointerSelection,
@@ -94,7 +94,7 @@ fun FrameProgressBar(
 
 //TODO Add KMP support
 @Composable
-private fun FrameProgressBarBase(
+private fun FrameSeekBarBase(
     modifier: Modifier = Modifier,
     movement: Movement = Movement.CONTINUOUS,
     pointerSelection: PointerSelection = PointerSelection.CENTER,
