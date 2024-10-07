@@ -2,7 +2,6 @@ plugins {
     alias(libs.plugins.multiplatform)
     alias(libs.plugins.android.library)
     alias(libs.plugins.compose)
-    id("convention.publication")
 }
 
 group = "io.github.rafambn.frameseekbar"
@@ -72,31 +71,5 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
-    }
-}
-
-gradle.projectsEvaluated {
-    val signTasks = listOf(
-        "signAndroidReleasePublication",
-        "signJsPublication",
-        "signJvmPublication",
-        "signKotlinMultiplatformPublication"
-    )
-
-    val publishTasks = listOf(
-        "publishAndroidReleasePublicationToSonatypeRepository",
-        "publishJsPublicationToSonatypeRepository",
-        "publishJvmPublicationToSonatypeRepository",
-        "publishKotlinMultiplatformPublicationToSonatypeRepository"
-    )
-
-
-    //TODO check is the same logic is necessary for ios
-    publishTasks.forEach { publishTask ->
-        tasks.named(publishTask) {
-            signTasks.forEach { signTask ->
-                mustRunAfter(signTask)
-            }
-        }
     }
 }

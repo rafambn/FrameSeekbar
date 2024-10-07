@@ -1,7 +1,6 @@
 rootProject.name = "Template-library-with-App"
 include(":composeApp")
 include(":FrameSeekBar")
-includeBuild("convention-plugins")
 
 pluginManagement {
     repositories {
