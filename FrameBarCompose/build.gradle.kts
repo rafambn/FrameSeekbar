@@ -4,7 +4,7 @@ plugins {
     alias(libs.plugins.compose)
 }
 
-group = "io.github.rafambn.frameseekbar"
+group = "com.rafambn.framebar"
 version = "1.0"
 
 kotlin {

@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.rafambn.frameprogressbar"
+    namespace = "com.rafambn.framebar"
     compileSdk = 34
 
     val versionType = 1 /*1 for XML; 2 for Compose*/
@@ -38,16 +38,4 @@ android {
 
 dependencies {
     implementation("androidx.core:core-ktx:1.12.0")
-}
-
-afterEvaluate {
-    configure<PublishingExtension> {
-        publications {
-            create<MavenPublication>("release") {
-                from(components["release"])
-                groupId = "com.github.rafambn"
-                artifactId = "FrameProgressBar"
-            }
-        }
-    }
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="FrameProgressBar">
+    <declare-styleable name="FrameBar">
         <!-- Numbers of frames of the FrameProgressBar -->
         <attr name="size" format="integer" />
         <!-- The starting index of the selection -->

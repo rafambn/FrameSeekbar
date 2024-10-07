@@ -1,5 +1,5 @@
 import androidx.compose.ui.window.ComposeUIViewController
-import io.github.rafambn.templateapp.App
+import com.rafambn.framebarcomposeapp.App
 import platform.UIKit.UIViewController
 
 fun MainViewController(): UIViewController = ComposeUIViewController { App() }

@@ -45,7 +45,7 @@ kotlin {
             implementation(compose.materialIconsExtended)
             @OptIn(org.jetbrains.compose.ExperimentalComposeLibrary::class)
             implementation(compose.components.resources)
-            implementation(project(":FrameSeekBar"))
+            implementation(project(":FrameBarCompose"))
         }
 
         commonTest.dependencies {
@@ -74,14 +74,14 @@ kotlin {
 }
 
 android {
-    namespace = "io.github.rafambn.templateapp"
+    namespace = "com.rafambn.framebarcomposeapp"
     compileSdk = 34
 
     defaultConfig {
         minSdk = 24
         targetSdk = 34
 
-        applicationId = "io.github.rafambn.templateapp.androidApp"
+        applicationId = "com.rafambn.framebar"
         versionCode = 1
         versionName = "1.0.0"
     }

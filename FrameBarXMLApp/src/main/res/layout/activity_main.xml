@@ -7,7 +7,7 @@
     android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
-    <com.rafambn.frameprogressbar.FrameProgressBar
+    <com.rafambn.framebar.FrameBar
         android:id="@+id/aaaa"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,6 +17,6 @@
         app:layout_constraintTop_toTopOf="parent"
         >
 
-    </com.rafambn.frameprogressbar.FrameProgressBar>
+    </com.rafambn.framebar.FrameBar>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
