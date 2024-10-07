@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FrameProgressBar">
+        <!-- Numbers of frames of the FrameProgressBar -->
+        <attr name="size" format="integer" />
+        <!-- The starting index of the selection -->
+        <attr name="startIndex" format="integer" />
+
+        <!-- Type of movement of the FrameProgressBar
+            -DISCRETE
+            -CONTINUOUS-->
+        <attr name="movement">
+            <enum name="DISCRETE" value="0"/>
+            <enum name="CONTINUOUS" value="1"/>
+        </attr>
+        <!-- Whether the pointer should be coerced to the view
+            -COERCED
+            -NOT_COERCED-->
+        <attr name="coercePointer">
+            <enum name="COERCED" value="0"/>
+            <enum name="NOT_COERCED" value="1"/>
+        </attr>
+        <!-- The part of the pointer that indicates the selectable frame.
+            -LEFT
+            -CENTER
+            -RIGHT-->
+        <attr name="pointerSelection">
+            <enum name="LEFT" value="0"/>
+            <enum name="CENTER" value="1"/>
+            <enum name="RIGHT" value="2"/>
+        </attr>
+
+        <!-- The width of the markers -->
+        <attr name="markersWidth" format="integer" />
+        <!-- The height of the markers -->
+        <attr name="markersHeight" format="integer" />
+        <!-- The top offset of the markers -->
+        <attr name="markersTopOffset" format="integer" />
+        <!-- The color of the markers -->
+        <attr name="markersColor" format="color" />
+        <!-- The drawable of the markers -->
+        <attr name="markersDrawable" format="reference" />
+
+        <!-- The width of the pointer -->
+        <attr name="pointerWidth" format="integer" />
+        <!-- The height of the pointer -->
+        <attr name="pointerHeight" format="integer" />
+        <!-- The top offset of the pointer -->
+        <attr name="pointerTopOffset" format="integer" />
+        <!-- The color of the pointer -->
+        <attr name="pointerColor" format="color" />
+        <!-- The drawable of the pointer -->
+        <attr name="pointerDrawable" format="reference" />
+    </declare-styleable>
+</resources>

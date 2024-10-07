@@ -1,6 +1,8 @@
-rootProject.name = "Template-library-with-App"
-include(":composeApp")
-include(":FrameSeekBar")
+rootProject.name = "FrameBar"
+include(":FrameBarComposeApp")
+include(":FrameBarXMLApp")
+include(":FrameBarCompose")
+include(":FrameBarXML")
 
 pluginManagement {
     repositories {
